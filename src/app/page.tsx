@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Navbar theme="white" />
-      <main className="flex min-h-screen flex-wrap flex-col align-center items-center w-full">
+      <main className="flex min-h-screen flex-wrap flex-col align-center items-center w-full overflow-hidden">
         <section className="pt-[6.5rem] px-5 lg:px-0 flex flex-col lg:grid lg:grid-cols-12 lg:gap-7 lg:max-w-[75rem] w-full">
           
             <div className="lg:col-start-1 lg:col-end-5 flex flex-col content-center justify-center items-center lg:items-start text-left">

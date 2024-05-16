@@ -13,7 +13,7 @@ export default function Tech() {
     return(
         <>
             <Navbar theme="black"/>
-            <main className="bg-[#1c1c1c] flex min-h-screen flex-col align-center items-center w-full text-white">
+            <main className="bg-[#1c1c1c] flex min-h-screen flex-col align-center items-center w-full text-white overflow-hidden">
                 <section className="flex flex-col px-5 lg:px-0 lg:grid lg:grid-cols-2 lg:gap-7 lg:pt-20 pb-20 lg:pb-32 lg:max-w-[75rem] w-full">
                     <div className="flex flex-col self-center pb-5 lg:pb-0">
                         <h2 className="text-[1.5rem] lg:text-[3.5rem] flex flex-col pb-12 lg:pb-20">

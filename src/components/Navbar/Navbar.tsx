@@ -8,10 +8,10 @@ import langue from "@/assets/langue.png"
 export default function Navbar(props: any) {
     if(props.theme === "white") {
         return (
-            <header className="bg-[#fcfcfc] flex py-9 w-full px-5 justify-center sticky top-0 z-10">
+            <header className="bg-[#fcfcfc] flex py-3 lg:py-9 w-full px-5 lg:px-8 justify-center sticky top-0 z-10">
                 <nav className="flex justify-between w-full lg:w-[75rem]">
 
-                    <span className="w-[218px] ">
+                    <span className="w-28 lg:w-[218px] ">
                         <Link href="/"><Image width={800} height={160} alt="logo" src={logo} /></Link>
                     </span>
                     <ul className="hidden lg:flex items-center space-x-5 pr-[0.5rem]">
@@ -50,7 +50,7 @@ export default function Navbar(props: any) {
                         <div className="w-6 h-1 bg-black"></div>
                         <div className="w-6 h-1 bg-black"></div>
 
-                        <ul className="'bg-[#252525] w-screen pb-10 absolute -top-full right-0 duration-150 flex flex-col space-y-3 justify-end">
+                        <ul className="'bg-[#252525] hidden w-screen pb-10 absolute -top-full right-0 duration-150 flex flex-col space-y-3 justify-end">
                             <li>
                                 Home
                             </li>

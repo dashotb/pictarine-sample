@@ -9,7 +9,7 @@ export default function Partnership() {
     return(
         <>
             <Navbar theme="white" />
-            <main className="flex min-h-screen flex-wrap flex-col align-center items-center w-full">
+            <main className="flex min-h-screen flex-wrap flex-col align-center items-center w-full overflow-hidden">
                 <section className="grid grid-cols-2 gap-10 pt-24 max-w-[75rem]">
                     <div className="content-center">
                         <Title title="Être partenaire" subtitle="de Pictarine" />

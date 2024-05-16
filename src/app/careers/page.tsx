@@ -29,7 +29,7 @@ export default function Careers() {
     return(
         <>
             <Navbar theme="white"/>
-            <main className="bg-[#fff] flex min-h-screen flex-wrap flex-col align-center items-center w-full">
+            <main className="bg-[#fff] flex min-h-screen flex-wrap flex-col align-center items-center w-full overflow-hidden">
                 <section className="max-w-[75rem] flex flex-row gap-10 pt-28">
                     <div className="content-center w-[50%]">
                         <Title title="We need you" subtitle="Rejoins-nous"/>

@@ -9,7 +9,7 @@ export default function Products() {
     return(
         <>
             <Navbar theme="white"/>
-            <main className="flex flex-col w-full items-center">
+            <main className="flex flex-col w-full items-center overflow-hidden">
                 <section className="lg:pt-[6.5rem] flex flex-col px-5 lg:px-0  lg:grid lg:grid-cols-12 lg:gap-7 lg:max-w-[75rem]">
                     <div className="col-start-1 col-end-7 pt-28">
                         <h2 className="text-[3.5rem] flex flex-col">

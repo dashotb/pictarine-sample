@@ -9,7 +9,7 @@ export default function Life() {
         <>
             <Navbar theme="white"/>
             <main>
-                <section className="px-[22rem] grid grid-cols-12 gap-7 w-full pt-24">
+                <section className="px-[22rem] grid grid-cols-12 gap-7 w-full pt-24 overflow-hidden">
                     <div className="col-start-1 col-end-5 content-center">
                         <Title title="C'est ça, la" subtitle="Picta Life" />
                     </div>

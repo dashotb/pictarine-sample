@@ -8,7 +8,7 @@ export default function News() {
     return(
         <>
             <Navbar theme="black"/>
-            <main className="bg-[#1c1c1c] flex min-h-screen flex-wrap flex-col align-center items-center w-full">
+            <main className="bg-[#1c1c1c] flex min-h-screen flex-wrap flex-col align-center items-center w-full overflow-hidden">
                 <section className="flex flex-col max-w-[75rem] text-white">
                     <div className="flex flex-col self-start ">
                         <h2 className="text-[3.5rem]  flex flex-col pb-20">

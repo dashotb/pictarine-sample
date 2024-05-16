@@ -15,7 +15,7 @@ export default function Team() {
     return(
         <>
             <Navbar theme="white"/>
-            <main className="flex min-h-screen flex-wrap flex-col align-center items-center w-full  ">
+            <main className="flex min-h-screen flex-wrap flex-col align-center items-center w-full overflow-hidden">
                 <section className=" pt-24 sm:px-5 lg:px-0 lg:max-w-[75rem]">
                     <Image className="pb-5" src={majorque} alt="l'équipe à majorque" />
                     <Title title="La seule, la vraie," subtitle="la Picta Team" />
