@@ -128,9 +128,9 @@ export default function Navbar(props: any) {
                     {/* Hamburger Menu */}
                     <div className="dropdown dropdown-end lg:hidden">
                         <div tabIndex={0} role="button" className="space-y-1">
-                            <div className="w-6 h-1 bg-black"></div>
-                            <div className="w-6 h-1 bg-black"></div>
-                            <div className="w-6 h-1 bg-black"></div>
+                            <div className="w-6 h-1 bg-white"></div>
+                            <div className="w-6 h-1 bg-white"></div>
+                            <div className="w-6 h-1 bg-white"></div>
                         </div>
                         <ul tabIndex={0} className="bg-[#1c1c1c] dropdown-content z-[1] pl-7 pt-5 pb-5 w-[98vw] space-y-7 mt-3 text-[1rem]">
                             <li>

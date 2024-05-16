@@ -2,7 +2,7 @@ import Image from "next/image"
 import logo from "@/assets/logo.png"
 import langue from "@/assets/langue.png"
 import Link from "next/link"
-import { Insta, LinkedIn, WTTJ } from "@/assets/tools/svg"
+import { Insta, InstaW, LinkedIn, LinkedInW, WTTJ, WTTJW } from "@/assets/tools/svg"
 
 
 export default function Footer(props: any) {
@@ -46,9 +46,9 @@ export default function Footer(props: any) {
                         <p>46 rue Marco Polo</p>
                         <p>31670 Labège</p>
                         <div className="flex flex-row pt-2 gap-4">
-                            <Link href="https://www.instagram.com/pictarine/" className="w-6"><Insta /></Link>
-                            <Link href="https://www.linkedin.com/company/pictarine/" className="w-6"><LinkedIn /></Link>
-                            <Link href="https://www.welcometothejungle.com/fr/companies/pictarine" className="w-6"><WTTJ /></Link>
+                            <Link href="https://www.instagram.com/pictarine/" className="w-6"><InstaW /></Link>
+                            <Link href="https://www.linkedin.com/company/pictarine/" className="w-6"><LinkedInW /></Link>
+                            <Link href="https://www.welcometothejungle.com/fr/companies/pictarine" className="w-6"><WTTJW /></Link>
                         </div>
                     </div>
                     <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-2 leading-5 pt-5 lg:pt-0">
