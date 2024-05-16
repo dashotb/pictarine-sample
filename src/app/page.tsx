@@ -10,19 +10,19 @@ export default function Home() {
     <>
       <Navbar theme="white" />
       <main className="flex min-h-screen flex-wrap flex-col align-center items-center w-full overflow-hidden">
-        <section className="pt-[6.5rem] px-5 lg:px-0 flex flex-col lg:grid lg:grid-cols-12 lg:gap-7 lg:max-w-[75rem] w-full">
+        <section className="pt-12 lg:pt-[6.5rem] px-5 lg:px-0 flex flex-col lg:grid lg:grid-cols-12 lg:gap-7 lg:max-w-[75rem] w-full">
           
             <div className="lg:col-start-1 lg:col-end-5 flex flex-col content-center justify-center items-center lg:items-start text-left">
-              <h2 className="text-[3.5rem] pl-6 flex flex-col pb-20 ">
+              <h2 className="text-[1.6rem] lg:text-[3.5rem] pr-3 lg:pr-0 lg:pl-6 flex flex-col pb-12 lg:pb-20 ">
                 Explorateurs
-                <span className="absolute pt-12 pl-6 text-red-600 text-[4.2rem] italic font-extrabold ">créatifs</span>
+                <span className="absolute pt-5 lg:pt-12 pl-6 text-red-600 text-[2.2rem] lg:text-[4.2rem] italic font-extrabold ">créatifs</span>
               </h2>
               <p className="lg:max-w-[22rem]">Une team exceptionnelle, une pincée d'international, on rajoute une bonne louche de débrouillardise... et on obtient une équipe prête à déplacer des montagnes ! Bienvenue chez Pictarine !</p>
             </div>
           
           <Image className="col-start-5 col-end-13 pt-3" src={team_pictarine} width={3177} height={2116} alt="team pictarine" />
         </section>
-        <section className="pt-[7.3rem] px-5 lg:px-0 lg:grid lg:grid-cols-12 lg:gap-7 w-full lg:max-w-[75rem]">
+        <section className="pt-12 lg:pt-[7.3rem] px-5 lg:px-0 lg:grid lg:grid-cols-12 lg:gap-7 w-full lg:max-w-[75rem]">
           <div className="col-start-1 col-end-9 flex flex-col">
             <Image className="pr-8 hidden lg:block" src={workshop_reunion} width={800} height={363} alt="workshop-reunion" />
             <div className="lg:pl-8 pt-4 flex flex-row">
@@ -35,10 +35,10 @@ export default function Home() {
             <p className="lg:max-w-[21rem] w-full pt-1">...une team bourrée de talents, qui est prête à relever tous les challenges ! Mais c'est avant tout une équipe qui est toujours là les uns pour les autres et qui se serre les coudes.
 
               Proposer, tester, rater, ajuster... et, bien sûr, recommencer ! Car on a le droit à l'erreur chez Pictarine, et surtout on est jamais seul.e pour se relever.</p>
-            <Link href="/life"><button className="bg-[#db3753] w-[16.5rem] h-[3.8rem] rounded-[15px] text-white mt-5 hover:bg-[#fcfcfc] border-red-600 border-2 border-solid hover:text-[#db3753] transition duration-300">Découvre la Picta Life</button></Link>
+            <Link href="/life"><button className="bg-[#db3753] lg:w-[16.5rem] w-56 lg:h-[3.8rem] h-10 rounded-[15px] text-white mt-5 hover:bg-[#fcfcfc] border-red-600 border-2 border-solid hover:text-[#db3753] transition duration-300">Découvre la Picta Life</button></Link>
           </div>
         </section>
-        <section className="pt-[7.3rem] px-5 lg:px-0 flex flex-col lg:grid  lg:grid-cols-12  lg:gap-7 w-full  lg:max-w-[75rem]">
+        <section className="pt-12 lg:pt-[7.3rem] px-5 lg:px-0 flex flex-col lg:grid  lg:grid-cols-12  lg:gap-7 w-full  lg:max-w-[75rem]">
           <div className="col-start-1 col-end-9">
             <h2 className="text-[2.5rem] font-bold">Et le business alors ?</h2>
             <p className="leading-5">Chez nous, un seul mot d'ordre : créer et faire évoluer notre application mobile et web pour que nos utilisateurs puissent imprimer leurs meilleurs souvenirs ! Et pour cela, on ne cesse d’innover et d’explorer des nouvelles idées de produits.</p>
@@ -79,7 +79,7 @@ export default function Home() {
         </section>
         <section className="flex flex-col px-5 lg:px-0 pt-16 w-full pb-16 max-w-[75rem]">
           <div className="flex justify-center w-full">
-            <h2 className="flex flex-row w-[35rem] text-3xl text-center pr-8">
+            <h2 className="flex flex-row w-[35rem] text-end text-2xl lg:text-3xl lg:text-center pr-8">
               <span className="">
                 <Hello />
               </span>
@@ -88,7 +88,7 @@ export default function Home() {
           </div>
           <Link className="flex justify-center" href="/products"><button className="bg-[#db3753] w-[10rem] h-[3.8rem] rounded-[15px] text-white mt-5 hover:bg-[#fcfcfc] border-red-600 border-2 border-solid hover:text-[#db3753] transition duration-300">Let's Go !</button></Link>
         </section>
-        <section className="pt-[7rem] px-5 lg:px-0 bg-[#f8f8f8] max-w-[75rem]">
+        <section className="pt-8 lg:pt-[7rem] px-5 lg:px-0 bg-[#f8f8f8] max-w-[75rem]">
           <div className="lg:grid lg:grid-cols-2 flex flex-col gap-10">
             <div className="pt-10">
               <h2 className="text-4xl font-bold pb-2">Meetup at Picta</h2>
@@ -110,13 +110,13 @@ export default function Home() {
                 <span className="ml-7">Reste informé des prochains events par mail</span> 
               </h2>
               <div className="flex flex-col items-end inputBox">
-                <input type="text" required /><i className="ml-20">Adress mail</i>
-                <button className="bg-[#db3753] text-sm w-[6rem] h-[3.4rem] rounded-[10px] text-white mt-5 hover:bg-[#fcfcfc] border-red-600 border-2 border-solid hover:text-[#db3753] transition duration-300">S'inscrire</button>
+                <input type="text" required /><i className="md:ml-16 lg:ml-0 w-full">Adresse mail</i>
+                <button className="bg-[#db3753] text-sm w-28 lg:w-[6rem] h-10 lg:h-[3.4rem] rounded-[10px] text-white mt-5 hover:bg-[#fcfcfc] border-red-600 border-2 border-solid hover:text-[#db3753] transition duration-300">S'inscrire</button>
               </div>
             </div>
           </div>
         </section>
-        <section className="bg-[#f8f8f8] pt-[10rem] px-5 lg:px-0 flex flex-col lg:grid lg:grid-cols-12 lg:gap-7 w-full lg:max-w-[75rem]">
+        <section className="bg-[#f8f8f8] pt-12 lg:pt-[10rem] px-5 lg:px-0 flex flex-col lg:grid lg:grid-cols-12 lg:gap-7 w-full lg:max-w-[75rem]">
           <div className="col-start-1 col-end-9">
             <Image className="w-[47.2rem] rounded-[5px] hidden lg:block" src={course} alt="course" />
             <div className="flex flex-row pt-4 lg:h-[21.5rem]">

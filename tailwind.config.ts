@@ -5,6 +5,10 @@ const withMT = require("@material-tailwind/react/utils/withMT");
 
 
 const config: Config = withMT({
+  
+  plugins: [
+    require('daisyui'),
+  ],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -26,6 +30,5 @@ const config: Config = withMT({
       'mlg': { 'min': '1200px', 'max': '8000px' }
     }
   },
-  plugins: [],
 });
 export default config;

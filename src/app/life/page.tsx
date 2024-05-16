@@ -9,7 +9,7 @@ export default function Life() {
         <>
             <Navbar theme="white"/>
             <main>
-                <section className="px-[22rem] grid grid-cols-12 gap-7 w-full pt-24 overflow-hidden">
+                <section className="px-5 lg:px-0 lg:max-w-[75rem] flex flex-col lg:grid lg:grid-cols-12 gap-7 w-full pt-24 overflow-hidden">
                     <div className="col-start-1 col-end-5 content-center">
                         <Title title="C'est ça, la" subtitle="Picta Life" />
                     </div>
@@ -17,7 +17,7 @@ export default function Life() {
                         <Image src={detente} alt="tranquillou" />
                     </div>
                 </section>
-                <section className="px-[22rem] grid grid-cols-12 gap-7 w-full pt-48">
+                <section className="px-5 lg:px-0 lg:max-w-[75rem] flex flex-col lg:grid lg:grid-cols-12 gap-7 w-full pt-48">
                     <div className="col-start-1 col-end-9">
                         <h2 className="text-[2.5rem] font-bold pb-2">Nos plus beaux souvenirs</h2>
                         <h2 className=" text-3xl font-bold pt-8">Notre dernier séminaire</h2>

@@ -158,3 +158,9 @@ body {
 .courrier {
   font-family: 'Courier New', Courier, monospace;
 }
+
+.navbar {
+  box-shadow: 0 .4rem 1.8rem rgba(192, 215, 221, .38);
+  @media screen and(min-width: 959px){
+  }
+}

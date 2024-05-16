@@ -1,5 +1,6 @@
 import { verti_bar } from "@/assets/images";
 import { BlueLetter, Chat, Gear, Hello } from "@/assets/tools/svg";
+import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import { Title } from "@/components/Title/Title";
 import Image from "next/image";
@@ -10,22 +11,25 @@ export default function Partnership() {
         <>
             <Navbar theme="white" />
             <main className="flex min-h-screen flex-wrap flex-col align-center items-center w-full overflow-hidden">
-                <section className="grid grid-cols-2 gap-10 pt-24 max-w-[75rem]">
+                <section className="flex flex-col flex flex-col px-5 lg:px-0 lg:grid lg:grid-cols-2 gap-10 pt-8 lg:pt-24 lg:max-w-[75rem] w-full">
                     <div className="content-center">
-                        <Title title="Être partenaire" subtitle="de Pictarine" />
-                        <p className="leading-5 pt-2">Concevoir, construire et développer des applications uniques : ce n'est que la partie émergée de l'iceberg. Être partenaire de Pictarine, c'est exploiter de nouvelles opportunités de croissance. Que vous soyez distributeur, licensor, fabricant, marketeur... il n'y a pas de limite à ce que nous pouvons faire avec nos partenaires. </p>
+                        <h2 className="text-[1.5rem] lg:text-[3.5rem] flex flex-col lg:pb-20">
+                            Être partenaire
+                            <span className="absolute pt-5 lg:pt-12 pl-6 text-red-600 text-[2.2rem] lg:text-[4.2rem] italic font-extrabold ">de Pictarine</span>
+                        </h2>
+                        <p className="leading-5 pt-16 lg:pt-2">Concevoir, construire et développer des applications uniques : ce n'est que la partie émergée de l'iceberg. Être partenaire de Pictarine, c'est exploiter de nouvelles opportunités de croissance. Que vous soyez distributeur, licensor, fabricant, marketeur... il n'y a pas de limite à ce que nous pouvons faire avec nos partenaires. </p>
                         <p className="pt-2">Rejoignez-nous et construisons ensemble votre prochain axe de croissance !</p>
-                              <Link className="flex pt-2" href="/careers"><button className="bg-[#db3753] w-[14.3rem] h-[3.9rem] rounded-[15px] text-white mt-5 hover:bg-[#fcfcfc] border-red-600 border-2 border-solid hover:text-[#db3753] transition duration-300">Contactez-nous !</button></Link>
+                              <Link className="flex pt-2" href="/partnership#getInTouch"><button className="bg-[#db3753] w-44 lg:w-[14.3rem] h-10 lg:h-[3.9rem] rounded-[15px] text-white mt-5 hover:bg-[#fcfcfc] border-red-600 border-2 border-solid hover:text-[#db3753] transition duration-300">Contactez-nous !</button></Link>
                     </div> 
                     <div className="flex justify-end">
                         <Image src="https://a.storyblok.com/f/189744/2648x2252/641e690db8/partnership-at-cvs.jpg" width={595} height={800} alt="partnership-at-cvs"/>
                     </div>   
                 </section>
-                <section className="pt-24 max-w-[75rem]">
+                <section className="pt-24 px-5 lg:px-0 lg:max-w-[75rem]">
                     <h2 className="text-[2.5rem] font-bold">Nos Partenaires</h2>
                     <p className="pt-2">Quelques unes des plus grandes entreprises du classement Fortune 500 nous font confiance chaque jour.  Et vous ?</p>
                     <p className="pt-2 leading-5">Nos équipes fournissent les meilleures expériences pour vos clients en utilisant les technologies les plus récentes, un UX et des designs sur-mesure pour notre éternelle recherche de perfection.</p>
-                    <div className="grid grid-cols-3 pt-12 gap-[1.25rem] gap-y-12">
+                    <div className="grid grid-cols-2 lg:grid-cols-3 pt-12 gap-[1.25rem] gap-y-12">
                         <Image src="https://a.storyblok.com/f/189744/1329x272/240ad92cee/cvs.png/m/1200x0" alt="cvs" width={400} height={100}/>
                         <Image src="https://a.storyblok.com/f/189744/1330x272/c784ae5162/wg.png/m/1200x0" alt="wg" width={400} height={100} />
                         <Image src="https://a.storyblok.com/f/189744/1329x272/5247dbdda1/wb-1.png/m/1200x0" alt="wb" width={400} height={100}/>
@@ -40,9 +44,9 @@ export default function Partnership() {
                         <Image src="https://a.storyblok.com/f/189744/1475x558/b8cf6f07a8/zoonicorn.png/m/1200x0" alt="zoonicorn" width={400} height={100}/>
                     </div>
                 </section>
-                <section className="pt-24 max-w-[75rem]">
+                <section className="pt-24 px-5 lg:px-0 lg:max-w-[75rem]">
                     <h2 className="text-[2.5rem] font-bold">Quelques chiffres</h2>
-                    <div className="grid grid-cols-4 gap-10 pt-16">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10 pt-16">
 
                         <div className="pt-12 content-center p-2">
                             <h2 className="text-2xl font-bold">Notre devise : Rien n'est impossible !</h2>
@@ -50,53 +54,53 @@ export default function Partnership() {
                         </div>
 
                         <div className="bg-[#e6eef0] p-[35px]  flex flex-col flex-wrap content-center items-center justify-center text-center ">
-                            <div className="w-[50%]">
+                            <div className="lg:w-[50%]">
                                 <Image src="https://a.storyblok.com/f/189744/493x405/894ece520f/photo-printed.png/m/1200x0" alt="key" width={100} height={80} />
                                 <h2 className="text-2xl font-bold self-center pt-5">+ 400M</h2>
                                 <p className="text-base leading-5 pt-2 ">Photos imprimées en 6 ans</p>
                             </div>
                         </div>
                         <div className="bg-[#e6eef0] p-[35px]  flex flex-col flex-wrap content-center items-center justify-center text-center ">
-                            <div className="w-[50%]">
+                            <div className="lg:w-[50%]">
                                 <Image src="https://a.storyblok.com/f/189744/362x360/ef351feb6b/stat-sales.png/m/1200x0" alt="key" width={100} height={80} />
                                 <h2 className="text-2xl font-bold self-center pt-3">$4 M</h2>
                                 <p className="text-base leading-5 pt-2">Ventes moyennes par mois</p>
                             </div>
                         </div>
                         <div className="bg-[#e6eef0] p-[35px]  flex flex-col flex-wrap content-center items-center justify-center text-center ">
-                            <div className="w-[50%]">
+                            <div className="lg:w-[50%]">
                                 <Image src="https://a.storyblok.com/f/189744/350x334/203008069f/star-rate.png/m/1200x0" alt="key" width={100} height={80} />
                                 <h2 className="text-2xl font-bold self-center pt-5">4.9 / 5</h2>
                                 <p className="text-base leading-5 pt-2">Note moyenne sur les stores</p>
                             </div>
                         </div>
                         <div className="bg-[#e6eef0] p-[35px]  flex flex-col flex-wrap content-center items-center justify-center text-center ">
-                            <div className="w-[50%]">
+                            <div className="lg:w-[50%]">
                                 <Image src="https://a.storyblok.com/f/189744/304x324/140679fa4f/download.png/m/1200x0" alt="key" width={100} height={80} />
                                 <h2 className="text-2xl font-bold self-center pt-3">20 M</h2>
                                 <p className="text-base leading-5 pt-3">Downloads</p>
                             </div>
                         </div>
                         <div className="bg-[#e6eef0] p-[35px]  flex flex-col flex-wrap content-center items-center justify-center text-center ">
-                            <div className="w-[50%]">
+                            <div className="lg:w-[50%]">
                                 <Image src="https://a.storyblok.com/f/189744/405x304/f0e164b52a/store.png/m/1200x0" alt="key" width={100} height={80} />
                                 <h2 className="text-2xl font-bold self-center pt-3">23 000</h2>
                                 <p className="text-base leading-5 pt-5">Magasins partenaires</p>
                             </div>
                         </div>
-                        <div className="pt-12 col-start-3 col-end-5">
-                            <p className="text-black text-[1.5rem] text-end pt-8 pl-28"> <span className="inline-block mr-1"><Hello /></span>Découvrez en plus sur notre produit !</p>
-                            <Link className="flex justify-end" href="/products"><button className="bg-[#db3753] w-48 h-[3.8rem] rounded-[15px] text-white mt-5 hover:bg-[#fcfcfc] border-red-600 border-2 border-solid hover:text-[#db3753] transition duration-300">Notre Produit</button></Link>
+                        <div className="pt-12 col-start-1 col-end-3 lg:col-start-3 lg:col-end-5">
+                            <p className="text-black text-[1.5rem] text-end pt-8 lg:pl-28"> <span className="inline-block mr-1"><Hello /></span>Découvrez en plus sur notre produit !</p>
+                            <Link className="flex justify-end" href="/products"><button className="bg-[#db3753] w-40 lg:w-48 h-10 lg:h-[3.8rem] rounded-[15px] text-white mt-5 hover:bg-[#fcfcfc] border-red-600 border-2 border-solid hover:text-[#db3753] transition duration-300">Notre Produit</button></Link>
                         </div>
                     </div>
                 </section>
-                <section className="bg-[#f8f8f8] xl:p-[4rem] p-[2rem] w-full flex justify-center mt-32">
+                <section className="bg-[#f8f8f8] px-5 lg:px-0  w-full flex justify-center lg:mt-32">
                     <div className="flex flex-col max-w-[75rem] pt-12 items-center pb-16">
-                        <div className="text-center w-[80%]">
+                        <div className="text-center lg:w-[80%]">
                             <h2 className="text-[2.5rem] font-bold">Pourquoi être notre partenaire ?</h2>
                             <p className="leading-5">Parce que nous avons des années d'expertise dans l'impression rapide et facile de photos pour des millions de clients dans les magasins de nos partenaires à travers les US. Chez Pictarine, nous sommes toujours avides d'idées, de défis et... de nouveaux partenariats !</p>
                         </div>
-                        <div className="grid grid-cols-2 gap-10 pt-10">
+                        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 pt-10">
                             <Image src="https://a.storyblok.com/f/189744/2544x1740/90f796e7c3/teampartnership.png/m/1200x0" alt="team-partnership" width={800} height={800}/>
                             <div className="bg-[#fff] h-fit p-8 self-center">
                                 <h2 className="text-3xl font-bold">Le mot de l'équipe</h2>
@@ -108,7 +112,7 @@ export default function Partnership() {
                                 </div>
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 gap-10 pt-16">
+                        <div className="flex flex-col lg:grid lg:grid-cols-3 gap-8 lg:gap-10 pt-16">
                             <div>
                                 <Image src="https://a.storyblok.com/f/189744/210x208/cad4b4dcd4/stat-business.png/m/1200x0" alt="stat" width={50} height={50}/>
                                 <h2 className="text-2xl font-bold pt-3">Scalez votre business</h2>
@@ -127,32 +131,32 @@ export default function Partnership() {
                         </div>
                     </div>
                 </section>
-                <section className="flex flex-col max-w-[75rem]">
+                <section className="flex flex-col px-5 lg:px-0 lg:max-w-[75rem]" id="getInTouch">
                     <h2 className="text-[2.5rem] font-bold text-center pt-12">Contactez-nous</h2>
                     <div className="flex justify-center">
                         <div className="bg-[#6d7c88] w-[40%] h-[0.15rem] absolute mt-14 z-[-1]"></div>
-                        <div className="grid grid-cols-3 gap-32 pt-8 w-[80%]">
+                        <div className="grid grid-cols-3 gap-8 lg:gap-32 pt-8 w-[80%]">
                             <div className="bg-[#fff] flex flex-col items-center">
-                                <div className="w-14">
+                                <div className="w-10 lg:w-14">
                                     <BlueLetter/>
                                 </div>
-                                <p className="text-center pt-8 leading-5">Remplissez le formulaire ci-dessous</p>
+                                <p className="text-xs lg:text-base text-center pt-8 leading-5">Remplissez le formulaire ci-dessous</p>
                             </div>
                             <div className="bg-[#fff] flex flex-col items-center">
-                                <div className="w-14">
+                                <div className="w-10 lg:w-14">
                                     <Gear />
                                 </div>
-                                <p className="text-center pt-8 leading-5">On étudie chaque demande avec attention</p>
+                                <p className="text-xs lg:text-base text-center pt-8 leading-5">On étudie chaque demande avec attention</p>
                             </div>
                             <div className="bg-[#fff] flex flex-col items-center">
-                                <div className="w-14">
+                                <div className="w-10 lg:w-14">
                                     <Chat />
                                 </div>
-                                <p className="text-center pt-8 leading-5">On vous contacte pour les prochaines étapes !</p>
+                                <p className="text-xs lg:text-base text-center pt-8 leading-5">On vous contacte pour les prochaines étapes !</p>
                             </div>
                         </div>
                     </div>
-                    <form className="w-[60%] flex flex-col self-center pt-12" action="">
+                    <form className="lg:w-[60%] w-full flex flex-col self-center pt-12" action="">
                         <label className="text-sm pt-4" htmlFor="name">Votre nom<span className="text-red-600">*</span></label>
                         <div className="pt-2 rounded-[20px]">
                             <input required type="text" className=" rounded-[15px] border border-[#cbd6e2] border-solid w-full bg-[#f5f8fa] py-2 px-3"/>
@@ -205,6 +209,7 @@ export default function Partnership() {
                 </section>
                 
             </main>
+            <Footer theme="white"/>
         </>
     )
 }

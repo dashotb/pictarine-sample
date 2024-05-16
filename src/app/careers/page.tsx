@@ -8,6 +8,7 @@ import Link from "next/link";
 import { Contract, Hello, More, Point } from "@/assets/tools/svg";
 import React from "react";
 import { Carousel, IconButton } from "@material-tailwind/react";
+import Footer from "@/components/Footer/Footer";
 
 export default function Careers() {
     const offers = useState(jobs)
@@ -29,20 +30,23 @@ export default function Careers() {
     return(
         <>
             <Navbar theme="white"/>
-            <main className="bg-[#fff] flex min-h-screen flex-wrap flex-col align-center items-center w-full overflow-hidden">
-                <section className="max-w-[75rem] flex flex-row gap-10 pt-28">
-                    <div className="content-center w-[50%]">
-                        <Title title="We need you" subtitle="Rejoins-nous"/>
+            <main className="bg-[#fff] flex min-h-screen flex-wrap flex-col align-center items-center w-full overflow-hidden ">
+                <section className="px-5 lg:px-0 lg:max-w-[75rem] flex flex-col lg:flex-row gap-10 pt-8 lg:pt-28">
+                    <div className="content-center lg:w-[50%]">
+                        <h2 className="text-[1.6rem] lg:text-[3.5rem] pr-3 lg:pr-0 lg:pl-6 flex flex-col pb-12 lg:pb-20 ">
+                            We need you
+                            <span className="absolute pt-5 lg:pt-12 pl-6 text-red-600 text-[2.2rem] lg:text-[4.2rem] italic font-extrabold ">Rejoins-nous</span>
+                        </h2>
                         <p className="leading-5">On n’a pas fini de grandir ! On recherche des profils bourrés de talent et d’envie, bilingues avec une forte appétence pour l’étranger. Des “problem solvers” ingénieux, à l’esprit d’équipe qui ne se reposent jamais sur leurs acquis… bref, nos prochains coéquipiers n’auront pas peur de se retrousser les manches !</p>
                     </div>
-                    <div className="w-[50%]">
+                    <div className="lg:w-[50%]">
                         <Image src="https://a.storyblok.com/f/189744/2488x2028/4583732b06/groupe-jeep.jpg" alt="groupe-jeep" width={2000} height={2000}/>
                     </div>
                 </section>
-                <section className="max-w-[75rem] flex flex-col pt-52">
+                <section className="px-5 lg:px-0 lg:max-w-[75rem] flex flex-col pt-20 lg:pt-52">
                     <h2 className="font-bold text-[2.5rem]">Nos postes ouverts</h2>
                     <div>
-                        <div className="grid grid-cols-3 gap-5">
+                        <div className="flex flex-col lg:grid lg:grid-cols-3 gap-5">
                             {offers[0].map(offer => (
                                 <Link href={offer.url}>
                                     <div className="p-8 bg-[#f8f8f8] h-80 scale-95 hover:scale-100 hover:transition-all ">
@@ -66,18 +70,18 @@ export default function Careers() {
                         </div>
                     </div>
                 </section>
-                <section className="max-w-[75rem] flex flex-col pt-52 bg-[#fff]">
-                    <div className="grid grid-cols-12 gap-10">
+                <section className="px-5 lg:px-0 lg:max-w-[75rem] flex flex-col pt-52 bg-[#fff]">
+                    <div className="flex flex-col lg:grid lg:grid-cols-12 gap-10">
                         <div className="col-start-1 col-end-5">
                             <h2 className="font-bold text-3xl">Ton job de rêve n’est pas dans la liste ?</h2>
                             <p className="pt-5 leading-5">N’hésite pas à nous envoyer ta candidature spontanée, on prendra toujours le temps de l’étudier en détail !</p>
                         </div>
                         <div className="col-start-5 col-end-13 bg-[#f8f8f8]">
-                            <div className="flex flex-row gap-5 p-8 pt-12">
+                            <div className="flex flex-col lg:flex-row gap-5 p-8 pt-12">
                                 <input type="text" placeholder="Prenom" className="w-full bg-[#fff] py-3.5 px-4" />
                                 <input type="text" placeholder="Nom" className="w-full bg-[#fff] py-3.5 px-4" />
                             </div>
-                            <div className="flex flex-row gap-5 p-8 pt-1">
+                            <div className="flex flex-col lg:flex-row gap-5 p-8 pt-1">
                                 <input type="text" placeholder="Email" className="w-full bg-[#fff] py-3.5 px-4" />
                                 <input type="text" placeholder="Telephone" className="w-full bg-[#fff] py-3.5 px-4" />
                             </div>
@@ -85,87 +89,89 @@ export default function Careers() {
                                 <textarea  placeholder="Dis-nous en plus sur toi et ce qui t'anime !" className="w-full bg-[#fff] py-3.5 px-4" />  
                             </div>
                             <div className="flex justify-center">
-                                <button className="bg-[#db3753] font-bold w-80 h-[3.2rem] rounded-[10px] text-white text-sm mt-5 hover:bg-[#fcfcfc] border-red-600 border-2 border-solid hover:text-[#db3753] transition duration-300">Envoyer !</button>
+                                <button className="bg-[#db3753] font-bold w-32 lg:w-80 h-10 lg:h-[3.2rem] rounded-[10px] text-white text-sm mt-5 hover:bg-[#fcfcfc] border-red-600 border-2 border-solid hover:text-[#db3753] transition duration-300">Envoyer !</button>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section className="max-w-[75rem] flex flex-col pt-52 bg-[#fff]">
-                    <div className="flex flex-row gap-10 overflow-x-scroll no-scrollbar ">
+                <section className="px-5 lg:px-0 lg:max-w-[75rem] w-full flex flex-col pt-20 lg:pt-52 bg-[#fff]">
+                    <div className="flex flex-col lg:flex-row ">
                         <div>
-                            <div className="w-80">
-                                <h2 className="font-bold text-3xl">Le process de recrutement</h2>
+                            <div className="lg:w-80">
+                                <h2 className="font-bold text-2xl lg:text-3xl">Le process de recrutement</h2>
                                 <p className="pt-5 leading-5">On veut mieux te connaitre ! Et pour cela, rien de tel qu'un process de recrutement transparent. Ce sera l'occasion pour toi de découvrir un peu plus Pictarine et de pouvoir mieux te projeter dans ta future équipe.</p>
                             </div>
                         </div>
-                        <div>
-                            <div className="bg-[#e6eef0] relative  w-64 h-64 rounded-[5px]">
-                                <p className="absolute text-[5rem] leading-5 font-bold mt-10 mr-5 text-[#fff] z-[0]">1</p>
-                                <h2 className="text-2xl font-bold ml-5 relative z-[1] px-5 pt-5">Screening telephonique</h2>
-                                <p className="pt-2 px-5">20 min</p>
-                                <p className="pt-2 leading-5 px-5">1er échange pour apprendre à se connaître avec le manager de l’équipe que tu souhaites rejoindre.</p>
+                        <div className="flex flex-row gap-10 overflow-hidden overflow-x-scroll no-scrollbar pt-8 lg:pt-0 ">
+                            <div>
+                                <div className="bg-[#e6eef0] relative  w-64 h-64 rounded-[5px]">
+                                    <p className="absolute text-[5rem] leading-5 font-bold mt-10 mr-5 text-[#fff] z-[0]">1</p>
+                                    <h2 className="text-2xl font-bold ml-5 relative z-[1] px-5 pt-5">Screening telephonique</h2>
+                                    <p className="pt-2 px-5">20 min</p>
+                                    <p className="pt-2 leading-5 px-5">1er échange pour apprendre à se connaître avec le manager de l’équipe que tu souhaites rejoindre.</p>
+                                </div>
+                                <div className="bg-[#e6eef0] w-[1.2rem] h-[1.2rem] rounded-[100px] relative mt-5 ml-28 z-[2] "><div className="bg-[#e6eef0] w-[83rem] h-[0.2rem] rounded-[100px] absolute mt-2 mr-12 z-[2]"></div></div>
+                                <p className="flex justify-center italic font-bold mt-2">Day 1</p>
                             </div>
-                            <div className="bg-[#e6eef0] w-[1.2rem] h-[1.2rem] rounded-[100px] relative mt-5 ml-28 z-[2] "><div className="bg-[#e6eef0] w-[83rem] h-[0.2rem] rounded-[100px] absolute mt-2 mr-12 z-[2]"></div></div>
-                            <p className="flex justify-center italic font-bold mt-2">Day 1</p>
-                        </div>
-                        <div>
-                            <div className="bg-[#e6eef0] relative w-64 h-64  rounded-[5px]">
-                                <p className="absolute text-[5rem] leading-5 font-bold mt-10 mr-5 text-[#fff] z-[0]">2</p>
-                                <h2 className="text-2xl font-bold ml-5 relative z-[1] px-5 pt-5">Entretien d’équipe</h2>
-                                <p className="pt-2 px-5">90 min</p>
-                                <p className="pt-2 px-5 leading-5">Entretien avec le manager et une personne de l’équipe que tu souhaites rejoindre.</p>
+                            <div>
+                                <div className="bg-[#e6eef0] relative w-64 h-64  rounded-[5px]">
+                                    <p className="absolute text-[5rem] leading-5 font-bold mt-10 mr-5 text-[#fff] z-[0]">2</p>
+                                    <h2 className="text-2xl font-bold ml-5 relative z-[1] px-5 pt-5">Entretien d’équipe</h2>
+                                    <p className="pt-2 px-5">90 min</p>
+                                    <p className="pt-2 px-5 leading-5">Entretien avec le manager et une personne de l’équipe que tu souhaites rejoindre.</p>
+                                </div>
+                                <div className="bg-[#e6eef0] w-[1.2rem] h-[1.2rem] rounded-[100px] relative mt-5 ml-28 z-[2] "></div>
+                                <p className="flex justify-center italic font-bold mt-2">Day 7</p>
                             </div>
-                            <div className="bg-[#e6eef0] w-[1.2rem] h-[1.2rem] rounded-[100px] relative mt-5 ml-28 z-[2] "></div>
-                            <p className="flex justify-center italic font-bold mt-2">Day 7</p>
-                        </div>
-                        <div>
-                            <div className="bg-[#e6eef0] relative w-64 h-64  rounded-[5px]">
-                            <p className="absolute text-[5rem] leading-5 font-bold mr-5 mt-5 text-[#fff] z-[0]">3</p>
-                                <h2 className="text-2xl font-bold ml-5 relative z-[1] px-5 pt-5">Test immersif</h2>
-                                <p className="pt-2 px-5 relative z-[1]">2h à 3h</p>
-                                <p className="pt-2 px-5 leading-5">Test adapté au poste, préparé par le manager. Ensuite, tu présentes ton rendu au manager.</p>
+                            <div>
+                                <div className="bg-[#e6eef0] relative w-64 h-64  rounded-[5px]">
+                                <p className="absolute text-[5rem] leading-5 font-bold mr-5 mt-5 text-[#fff] z-[0]">3</p>
+                                    <h2 className="text-2xl font-bold ml-5 relative z-[1] px-5 pt-5">Test immersif</h2>
+                                    <p className="pt-2 px-5 relative z-[1]">2h à 3h</p>
+                                    <p className="pt-2 px-5 leading-5">Test adapté au poste, préparé par le manager. Ensuite, tu présentes ton rendu au manager.</p>
+                                </div>
+                                <div className="bg-[#e6eef0] w-[1.2rem] h-[1.2rem] rounded-[100px] relative mt-5 ml-28 z-[2] "></div>
+                                <p className="flex justify-center italic font-bold mt-2">Day 14</p>
                             </div>
-                            <div className="bg-[#e6eef0] w-[1.2rem] h-[1.2rem] rounded-[100px] relative mt-5 ml-28 z-[2] "></div>
-                            <p className="flex justify-center italic font-bold mt-2">Day 14</p>
-                        </div>
-                        <div>
-                            <div className="bg-[#e6eef0] relative w-64 h-64  rounded-[5px]">
-                            <p className="absolute text-[5rem] leading-5 font-bold mr-5 mt-5 text-[#fff] z-[0]">4</p>
-                                <h2 className="text-2xl font-bold ml-5 relative z-[1] px-5 pt-5">Entretien Final</h2>
-                                <p className="pt-2 px-5 relative z-[1]">1h</p>
-                                <p className="pt-2 px-5 leading-5">Rencontre avec un des fondateurs et Elodie notre Head of People.</p>
+                            <div>
+                                <div className="bg-[#e6eef0] relative w-64 h-64  rounded-[5px]">
+                                <p className="absolute text-[5rem] leading-5 font-bold mr-5 mt-5 text-[#fff] z-[0]">4</p>
+                                    <h2 className="text-2xl font-bold ml-5 relative z-[1] px-5 pt-5">Entretien Final</h2>
+                                    <p className="pt-2 px-5 relative z-[1]">1h</p>
+                                    <p className="pt-2 px-5 leading-5">Rencontre avec un des fondateurs et Elodie notre Head of People.</p>
+                                </div>
+                                <div className="bg-[#e6eef0] w-[1.2rem] h-[1.2rem] rounded-[100px] relative mt-5 ml-28 z-[2] "></div>
+                                <p className="flex justify-center italic font-bold mt-2">Day 18</p>
                             </div>
-                            <div className="bg-[#e6eef0] w-[1.2rem] h-[1.2rem] rounded-[100px] relative mt-5 ml-28 z-[2] "></div>
-                            <p className="flex justify-center italic font-bold mt-2">Day 18</p>
-                        </div>
-                        <div>
-                            <div className="bg-[#e6eef0] relative w-64 h-64  rounded-[5px]">
-                            <p className="absolute text-[5rem] leading-5 font-bold mr-5 mt-10 text-[#fff] z-[0]"></p>
-                                <h2 className="text-2xl font-bold ml-5 relative z-[1] px-5 pt-5">Welcome Aboard!</h2>
-                                <p className="pt-2 px-5">On ne te fait pas attendre !</p>
-                                <p className="pt-2 px-5 leading-5">Ta proposition est déjà prête, il ne te reste plus qu’à l’accepter!</p>
+                            <div>
+                                <div className="bg-[#e6eef0] relative w-64 h-64  rounded-[5px]">
+                                <p className="absolute text-[5rem] leading-5 font-bold mr-5 mt-10 text-[#fff] z-[0]"></p>
+                                    <h2 className="text-2xl font-bold ml-5 relative z-[1] px-5 pt-5">Welcome Aboard!</h2>
+                                    <p className="pt-2 px-5">On ne te fait pas attendre !</p>
+                                    <p className="pt-2 px-5 leading-5">Ta proposition est déjà prête, il ne te reste plus qu’à l’accepter!</p>
+                                </div>
+                                <div className="bg-[#e6eef0] w-[1.2rem] h-[1.2rem] rounded-[100px] relative mt-5 ml-28 z-[2] "></div>
+                                <p className="flex justify-center italic font-bold mt-2">Day 19</p>
                             </div>
-                            <div className="bg-[#e6eef0] w-[1.2rem] h-[1.2rem] rounded-[100px] relative mt-5 ml-28 z-[2] "></div>
-                            <p className="flex justify-center italic font-bold mt-2">Day 19</p>
+                                
                         </div>
-                        
                     </div>
                 </section>
-                <section className="flex flex-col pt-52 max-w-[75rem] pb-20">
+                <section className="flex flex-col pt-20 lg:pt-52 px-5 lg:px-0 lg:max-w-[75rem] pb-20">
                     <div className="flex justify-center w-full">
                         <h2 className="flex flex-row  text-2xl text-center">
-                            <Hello />
+                            <span className="inline-block"><Hello /></span>
                             Découvre ce qui t'attend au quotidien chez Pictarine par ici !
                         </h2>
                     </div>
-                    <Link className="flex justify-center" href="/life"><button className="bg-[#db3753] w-[13rem] h-[3.8rem] rounded-[15px] text-white  hover:bg-[#fcfcfc] border-red-600 border-2 border-solid hover:text-[#db3753] transition duration-300">La Picta Life</button></Link>
+                    <Link className="flex justify-center" href="/life"><button className="bg-[#db3753] w-44 lg:w-[13rem] h-10 lg:h-[3.8rem] rounded-[15px] text-white  hover:bg-[#fcfcfc] border-red-600 border-2 border-solid hover:text-[#db3753] transition duration-300">La Picta Life</button></Link>
                 </section>
-                <section className="max-w-[75rem] flex flex-col pt-52 bg-[#fff]">
-                    <h2 className="font-bold text-3xl">Et en attendant, rencontre l'équipe !</h2>
-                    <div className="flex justify-center w-[75rem] mt-8">
-                        
+                <section className="pt-20 lg:pt-56 pb-12 px-5 lg:px-0 w-screen lg:max-w-[75rem]">
+                    <h2 className="text-4xl font-bold pb-10">En attendant, rencontre l’équipe !</h2>
+                    <div className="flex justify-center mt-8">
+
                         <Carousel
-                            className="rounded-xl w-[800px]"
+                            className="rounded-xl w-full h-[50%] lg:w-[800px] items-center"
                             prevArrow={({ handlePrev }) => (
                                 <IconButton
                                     variant="text"
@@ -258,14 +264,17 @@ export default function Careers() {
                             </Carousel>
                         </div>
                 </section>
-                <section className="max-w-[75rem] flex flex-col pt-52 bg-[#fff] pb-52">
-                    <Title title="Pictarine," subtitle="ce qui fait la diff"/>
-                    <div className="flex flex-row pt-12">
-                        <div className="px-24 w-[50%] py-24 ">
+                <section className="px-5 lg:px-0 lg:max-w-[75rem] flex flex-col pt-52 bg-[#fff] pb-20 lg:pb-52">
+                    <h2 className="text-[1.6rem] lg:text-[3.5rem] pr-3 lg:pr-0 lg:pl-6 flex flex-col pb-12 lg:pb-20 ">
+                        Pictarine
+                        <span className="absolute pt-5 lg:pt-12 pl-6 text-red-600 text-[2.2rem] lg:text-[4.2rem] italic font-extrabold ">ce qui fait la diff</span>
+                    </h2>
+                    <div className="flex flex-col lg:flex-row pt-12">
+                        <div className="lg:px-24 lg:w-[50%] lg:py-24 ">
                             <Image src="https://a.storyblok.com/f/189744/1900x2403/73d244ca21/celebration-allhands.jpg/m/1200x0" alt="brunch" width={500} height={2000}/>
-                            <Image className="pt-12" src="https://a.storyblok.com/f/189744/1900x1473/dbc1445d30/logo-conf.jpg/m/1200x0" alt="brunch" width={500} height={2000} />
+                            <Image className="pt-12 hidden lg:block" src="https://a.storyblok.com/f/189744/1900x1473/dbc1445d30/logo-conf.jpg/m/1200x0" alt="brunch" width={500} height={2000} />
                         </div>
-                        <div className="w-[50%]">
+                        <div className="lg:w-[50%]">
                             <div className="pt-10">
                                 <h2 className="text-2xl font-bold">Suivi & Feedbacks</h2>
                                 <p className="leading-5 pt-3">On encourage à faire du feedback sur tout. Tu as un suivi perso et pro chaque semaine par ton manager grâce à un 1-1.</p>
@@ -294,14 +303,17 @@ export default function Careers() {
                                 <h2 className="text-2xl font-bold">De l'animation</h2>
                                 <p className="leading-5 pt-3">Meetups, séminaires, lancer de hache, concours de gâteaux, cours de sport, massages, soirées LAN, soirées cuisine...</p>
                             </div>
-                            <Link href="/life" className="text-red-600 pt-3">
-                                <p>Lire plus <span className="w-3 inline-block"><More /></span></p>
+                            <Link href="/life" className="text-red-600 lg:pt-3">
+                                <p>Découvre la Picta Life<span className="w-3 inline-block ml-2 pt-8 lg:pt-0"><More /></span></p>
                             </Link>
+                            <div>
+                                <Image className="pt-12  block lg:hidden" src="https://a.storyblok.com/f/189744/1900x1473/dbc1445d30/logo-conf.jpg/m/1200x0" alt="brunch" width={500} height={2000} />
+                            </div>
                         </div>
-
                     </div>
                 </section>
             </main>
+            <Footer theme="white"/>
         </>
     )
 }

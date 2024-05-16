@@ -8,7 +8,7 @@ import langue from "@/assets/langue.png"
 export default function Navbar(props: any) {
     if(props.theme === "white") {
         return (
-            <header className="bg-[#fcfcfc] flex py-3 lg:py-9 w-full px-5 lg:px-8 justify-center sticky top-0 z-10">
+            <header className="bg-[#fcfcfc] flex py-3 lg:py-9 w-full px-5 lg:px-8 justify-center sticky top-0 z-[80]">
                 <nav className="flex justify-between w-full lg:w-[75rem]">
 
                     <span className="w-28 lg:w-[218px] ">
@@ -45,51 +45,54 @@ export default function Navbar(props: any) {
                     </ul>
 
                     {/* Hamburger Menu */}
-                    <button className="space-y-1 group md:hidden">
-                        <div className="w-6 h-1 bg-black"></div>
-                        <div className="w-6 h-1 bg-black"></div>
-                        <div className="w-6 h-1 bg-black"></div>
-
-                        <ul className="'bg-[#252525] hidden w-screen pb-10 absolute -top-full right-0 duration-150 flex flex-col space-y-3 justify-end">
+                    <div className="dropdown dropdown-end lg:hidden">
+                        <div tabIndex={0} role="button" className="space-y-1">
+                            <div className="w-6 h-1 bg-black"></div>
+                            <div className="w-6 h-1 bg-black"></div>
+                            <div className="w-6 h-1 bg-black"></div>
+                        </div>
+                        <ul tabIndex={0} className="dropdown-content z-[1] pl-7 pt-5 pb-5 bg-base-100 w-[98vw] space-y-7 mt-3 text-[1rem]">
                             <li>
-                                Home
+                                <Link href="/" className="hover:text-red-600 transition duration-200 ">Home</Link>
                             </li>
                             <li>
-                                Notre Produit
+                                <Link href="/products" className="hover:text-red-600 transition duration-200">Notre Produit</Link>
                             </li>
                             <li>
-                                Picta Life
+                                <Link href="/life" className="hover:text-red-600 transition duration-200 ">Picta Life</Link>
                             </li>
                             <li>
-                                La Team
+                                <Link href="/team" className="hover:text-red-600 transition duration-200">La Team</Link>
                             </li>
                             <li>
-                                La Tech
+                                <Link href="/tech" className="hover:text-red-600 transition duration-200">La Tech</Link>
                             </li>
                             <li>
-                                Partnerships
+                                <Link href="/partnership" className="hover:text-red-600 transition duration-200">Partnerships</Link>
                             </li>
                             <li>
-                                News Room
+                                <Link href="/news-room" className="hover:text-red-600 transition duration-200">News Room</Link>
                             </li>
                             <li>
-                                Rejoins-nous
+                                <Link href="/careers" className="hover:text-red-600 transition duration-200">Rejoins-nous</Link>
                             </li>
-                            <li>
-                                <Image className="w-7" src={langue} width={73} height={63} alt="langues" />
+                            <li className="flex flex-row">
+                                <p className="text-sm"><Image className="w-7 inline-block" src={langue} width={73} height={63} alt="langues" /> Passer en version anglaise</p>
                             </li>
                         </ul>
-                    </button>
+                    </div>
+                
+
                 </nav>
             </header>
         )
     }
     if (props.theme === "black") {
         return (
-            <header className="bg-[#1c1c1c] flex py-9 w-full px-8 justify-center sticky top-0 z-10">
-                <nav className="flex justify-between w-[75rem] text-white">
+            <header className="bg-[#1c1c1c] flex py-3 lg:py-9 w-full px-5 lg:px-8 justify-center sticky top-0 z-[80]">
+                <nav className="flex justify-between w-full lg:w-[75rem] text-white">
 
-                    <span className="w-[218px] ">
+                    <span className="w-28 lg:w-[218px] ">
                         <Link href="/"><Image width={800} height={160} alt="logo" src={logo} /></Link>
                     </span>
                     <ul className="hidden lg:flex items-center space-x-5 pr-[0.5rem]">
@@ -123,41 +126,42 @@ export default function Navbar(props: any) {
                     </ul>
 
                     {/* Hamburger Menu */}
-                    <button className="space-y-1 group md:hidden">
-                        <div className="w-6 h-1 bg-black"></div>
-                        <div className="w-6 h-1 bg-black"></div>
-                        <div className="w-6 h-1 bg-black"></div>
-
-                        <ul className="'bg-[#252525] w-screen pb-10 absolute -top-full right-0 duration-150 flex flex-col space-y-3 justify-end">
+                    <div className="dropdown dropdown-end lg:hidden">
+                        <div tabIndex={0} role="button" className="space-y-1">
+                            <div className="w-6 h-1 bg-black"></div>
+                            <div className="w-6 h-1 bg-black"></div>
+                            <div className="w-6 h-1 bg-black"></div>
+                        </div>
+                        <ul tabIndex={0} className="bg-[#1c1c1c] dropdown-content z-[1] pl-7 pt-5 pb-5 w-[98vw] space-y-7 mt-3 text-[1rem]">
                             <li>
-                                Home
+                                <Link href="/" className="hover:text-red-600 transition duration-200 ">Home</Link>
                             </li>
                             <li>
-                                Notre Produit
+                                <Link href="/products" className="hover:text-red-600 transition duration-200">Notre Produit</Link>
                             </li>
                             <li>
-                                Picta Life
+                                <Link href="/life" className="hover:text-red-600 transition duration-200 ">Picta Life</Link>
                             </li>
                             <li>
-                                La Team
+                                <Link href="/team" className="hover:text-red-600 transition duration-200">La Team</Link>
                             </li>
                             <li>
-                                La Tech
+                                <Link href="/tech" className="hover:text-red-600 transition duration-200">La Tech</Link>
                             </li>
                             <li>
-                                Partnerships
+                                <Link href="/partnership" className="hover:text-red-600 transition duration-200">Partnerships</Link>
                             </li>
                             <li>
-                                News Room
+                                <Link href="/news-room" className="hover:text-red-600 transition duration-200">News Room</Link>
                             </li>
                             <li>
-                                Rejoins-nous
+                                <Link href="/careers" className="hover:text-red-600 transition duration-200">Rejoins-nous</Link>
                             </li>
-                            <li>
-                                <Image className="w-7" src={langue} width={73} height={63} alt="langues" />
+                            <li className="flex flex-row">
+                                <p className="text-sm"><Image className="w-7 inline-block" src={langue} width={73} height={63} alt="langues" /> Passer en version anglaise</p>
                             </li>
                         </ul>
-                    </button>
+                    </div>
                 </nav>
             </header>
         )

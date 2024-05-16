@@ -1,5 +1,6 @@
 import { maddyness, maddyness_logo, echos, echos_logo, apple_vision, walgreens_logo } from "@/assets/images";
 import { Bell, Hello } from "@/assets/tools/svg";
+import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,23 +10,23 @@ export default function News() {
         <>
             <Navbar theme="black"/>
             <main className="bg-[#1c1c1c] flex min-h-screen flex-wrap flex-col align-center items-center w-full overflow-hidden">
-                <section className="flex flex-col max-w-[75rem] text-white">
+                <section className="flex flex-col px-5 lg:px-0 lg:max-w-[75rem] text-white">
                     <div className="flex flex-col self-start ">
-                        <h2 className="text-[3.5rem]  flex flex-col pb-20">
+                        <h2 className="text-[1.5rem] lg:text-[3.5rem] pt-10 lg:pt-20 flex flex-col pb-12 lg:pb-20">
                             News Room
-                            <span className="multiColor absolute pt-12 pl-6 text-[4.2rem] italic font-extrabold">Press Releases</span>
+                            <span className="multiColor absolute pt-5 lg:pt-12 pl-6 text-[2.3rem] lg:text-[4.2rem] italic font-extrabold">Press Releases</span>
                         </h2>
                     </div>
-                    <Image className="self-center pt-56" src="https://a.storyblok.com/f/189744/4802x775/bf71235f6e/pictarinexwalgreens.png/m/1200x0" width={520} height={800} alt="wlg-picta" />
+                    <Image className="self-center pt-28 lg:pt-56" src="https://a.storyblok.com/f/189744/4802x775/bf71235f6e/pictarinexwalgreens.png/m/1200x0" width={520} height={800} alt="wlg-picta" />
                     <p className="leading-5 text-xs font-bold pt-5">February 2, 2024</p>
                     <h2 className="text-[2rem] font-bold leading-10">Pictarine Partners with Walgreens to Revolutionize Photo Printing with Launch of Picta Studio on Apple Vision Pro.</h2>
                     <Image className="pt-10" src="https://a.storyblok.com/f/189744/5220x3551/b032cee9ad/apple-vision-pro-picta-studio.png/m/1200x0" alt="apple-vision-pro" width={2000} height={1000}/>
                     <p className="leading-5 font-bold pt-8">Customers can artistically curate and visualize photos in an immersive three-dimensional space, and transform digital memories into personalized wall art and canvases using Apple Vision Pro</p>
                 </section>
-                <section className="flex flex-col max-w-[75rem] text-white pt-12 pb-24">
+                <section className="flex flex-col px-5 lg:px-0 lg:max-w-[75rem] w-full text-white pt-12 pb-24">
                     <h2 className="text-2xl font-bold">Bringing a New Dimension to Photo Printing Experiences</h2>
                     <p className="leading-5 pt-5">The Picta Studio app, designed specifically for Apple Vision Pro and visionOS, allows users to artistically curate and visualize their photos in an immersive three-dimensional space. This app takes advantage of the unique capabilities of spatial computing to enable customers to effortlessly transform their digital memories into personalized wall art, including metal, wood, and bamboo panels, as well as canvases.</p>
-                    <div className="pt-5 grid grid-cols-12 gap-10">
+                    <div className="pt-5 flex flex-col lg:grid lg:grid-cols-12 gap-10">
                         <div className="col-start-1 col-end-9">
                             <Image src="https://a.storyblok.com/f/189744/5220x2936/6fdcbb2c4d/apple-vision-pro-picta-studio-1.jpg/m/1200x0" alt="vision-pro-studio" width={2000} height={2000}/>
                         </div>
@@ -40,16 +41,16 @@ export default function News() {
                     <p className="pt-5 leading-5">Walgreens (www.walgreens.com) is included in the U.S. Retail Pharmacy and U.S. Healthcare segments of Walgreens Boots Alliance, Inc. (Nasdaq: WBA), an integrated healthcare, pharmacy and retail leader with a 170-year heritage of caring for communities. WBA’s purpose is to create more joyful lives through better health. Operating nearly 9,000 retail locations across America, Puerto Rico and the U.S. Virgin Islands, Walgreens is proud to be a neighborhood health destination serving nearly 10 million customers each day. Walgreens pharmacists play a critical role in the U.S. healthcare system by providing a wide range of pharmacy and healthcare services, including those that drive equitable access to care for the nation’s underserved populations. To best meet the needs of customers and patients, Walgreens offers a true omnichannel experience, with fully integrated physical and digital platforms supported by the latest technology to deliver high-quality products and services in communities nationwide.</p>
                     <h2 className="text-2xl font-bold pt-12">About Pictarine</h2>
                     <p className="pt-5 leading-5">Pictarine is at the forefront of digital photo technology, specializing in innovative applications and websites that enhance the photo printing experience. Known for their user-friendly and creative applications, Pictarine has consistently pushed the boundaries of the mobile and web photo printing experience, making it more accessible and engaging for consumers. Their decade-long collaboration with industry giants like Walgreens underscores their commitment to bringing cutting-edge technology and creativity together in the photo printing world.</p>
-                    <div className="flex flex-row pt-24 justify-between text-center">
-                        <div className="justify-center items-center w-[50%]">
+                    <div className="flex flex-col lg:flex-row pt-8 lg:pt-24 justify-between text-center">
+                        <div className="justify-center items-center lg:w-[50%]">
                             <p>Walgreens Developer Program<br />-<br />apibizdev@walgreens.com</p>
                         </div>
-                        <div className="justify-center items-center w-[50%]">
+                        <div className="justify-center pt-5 lg:pt-0 items-center lg:w-[50%]">
                             <p>François Goldgewicht<br />CTO Pictarine<br />-<br />apibizdev@walgreens.com</p>
                         </div>
                     </div>
-                    <div className="flex flex-row pt-48 ">
-                        <div className="flex flex-col w-[50%] items-start">
+                    <div className="flex flex-col lg:flex-row lg:pt-48 ">
+                        <div className="flex flex-col lg:w-[50%] items-start">
                             <div>
                                 <p className="absolute text-[6rem] font-bold pt-8 pl-2 text-[#6d7c88] ">400</p>
                                 <div className="pl-[3rem] pt-[8rem]">
@@ -65,7 +66,7 @@ export default function News() {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[50%]">
+                        <div className="lg:w-[50%]">
                             <div className="pt-12 col-start-3 col-end-5">
                                 <p className="text-white font-bold text-[1.9rem]  pt-8 "><span className="inline-block mr-10 mb-7"><Bell /></span>Receive our press releases by mail!</p>
                                 <div className="flex pt-10 justify-end">
@@ -77,10 +78,10 @@ export default function News() {
                     </div>
                 </section>
                 <section className="bg-[#f8f8f8] flex w-full justify-center">
-                    <div className="pt-[8rem] pb-[10rem] flex flex-col max-w-[75rem]">
+                    <div className="pt-8 lg:pt-[8rem] px-5 lg:px-0 pb-20 lg:pb-[10rem] flex flex-col max-w-[75rem]">
                         
                             <h2 className="text-3xl font-bold pb-3">On parle de nous</h2>
-                            <div className="grid grid-cols-3 gap-10 w-full">
+                            <div className="flex flex-col lg:grid lg:grid-cols-3 gap-10 w-full">
                                 <Link href="https://www.maddyness.com/2022/12/01/pictarine-photo/">
                                     <div className="bg-white w-[22.5rem] rounded-[10px]">
                                         <Image className="p-3 rounded-[15px]" src={maddyness} alt="maddyness" />
@@ -113,6 +114,7 @@ export default function News() {
                     </div>
                 </section>
             </main>
+            <Footer theme="white"/>
         </>
     )
 }
