@@ -256,21 +256,21 @@ export default function Tech() {
                             <iframe
                                 src="https://www.youtube.com/embed/CSHOiUYHD9k"
                                 frameBorder="0"
-                                allowfullscreen
+                                allowFullScreen
                                 width={800}
                                 height={400}
                             />
                             <iframe
                                 src="https://www.youtube.com/embed/HMWGHLgFuCg"
                                 frameBorder="0"
-                                allowfullscreen
+                                allowFullScreen
                                 width={800}
                                 height={400}
                             />
                             <iframe
                                 src="https://www.youtube.com/embed/G-OgKQq8Jj0"
                                 frameBorder="0"
-                                allowfullscreen
+                                allowFullScreen
                                 width={800}
                                 height={400}
                             />

@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Navbar theme="white" />
       <main className="flex min-h-screen flex-wrap flex-col align-center items-center w-full">
-        <section className="pt-[6.5rem] px-5 mlg:px-0 flex flex-col lg:grid lg:grid-cols-12 lg:gap-7 lg:max-w-[75rem] w-full">
+        <section className="pt-[6.5rem] px-5 lg:px-0 flex flex-col lg:grid lg:grid-cols-12 lg:gap-7 lg:max-w-[75rem] w-full">
           
             <div className="lg:col-start-1 lg:col-end-5 flex flex-col content-center justify-center items-center lg:items-start text-left">
               <h2 className="text-[3.5rem] pl-6 flex flex-col pb-20 ">
@@ -22,7 +22,7 @@ export default function Home() {
           
           <Image className="col-start-5 col-end-13 pt-3" src={team_pictarine} width={3177} height={2116} alt="team pictarine" />
         </section>
-        <section className="pt-[7.3rem] px-5 mlg:px-0 lg:grid lg:grid-cols-12 lg:gap-7 w-full lg:max-w-[75rem]">
+        <section className="pt-[7.3rem] px-5 lg:px-0 lg:grid lg:grid-cols-12 lg:gap-7 w-full lg:max-w-[75rem]">
           <div className="col-start-1 col-end-9 flex flex-col">
             <Image className="pr-8 hidden lg:block" src={workshop_reunion} width={800} height={363} alt="workshop-reunion" />
             <div className="lg:pl-8 pt-4 flex flex-row">
