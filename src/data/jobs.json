@@ -1,0 +1,609 @@
+[
+    {
+        "id": 318831,
+        "token": "4bt2ff",
+        "dateCreation": 1714659068,
+        "dateFirstPublish": 1714659412,
+        "dateLastPublish": 1714659412,
+        "label": "Front Web Developer (Next.js - React.js - TypeScript)",
+        "currentStatus": "PUBLISHED",
+        "contract": "CDI",
+        "contractLength": null,
+        "contractLengthTimeUnit": null,
+        "fullTime": true,
+        "workHours": null,
+        "remote": false,
+        "country": "FR",
+        "city": "Labège",
+        "postalCode": "31670",
+        "lat": "43.536733",
+        "lng": "1.528055",
+        "recruiterId": 31742,
+        "unitId": 633,
+        "logo": "https://files.taleez.com/files/6396/pics/2022/2/21/c8231123-c26d-42be-b8cf-30ed93b05b74-0111bdee-4bf7-4f51-aaef-65677edeaaca.png",
+        "banner": null,
+        "companyLabel": "Pictarine",
+        "website": "https://pictarine.com/fr",
+        "tags": [
+            "Impacter la codebase et l'équipe pour garantir un haut niveau de qualité",
+            "Participer à la supervision de la production",
+            "Impacter le discovery en étant force de proposition"
+        ],
+        "url": "https://taleez.com/apply/front-web-developer-next-js-react-js-typescript-labege-pictarine-cdi",
+        "urlApplying": "https://taleez.com/apply/front-web-developer-next-js-react-js-typescript-labege-pictarine-cdi/applying",
+        "visibility": "PUBLIC",
+        "properties": [
+            {
+                "id": 24439,
+                "internal": "Team",
+                "apiKey": "equipe",
+                "label": "Team ",
+                "values": [
+                    "engineering"
+                ],
+                "labels": [
+                    "Engineering"
+                ]
+            },
+            {
+                "id": 12960,
+                "internal": "Type de télétravail",
+                "apiKey": "type_de_teletravail",
+                "label": "Type de télétravail",
+                "values": [
+                    "teletravail_ponctuel_possible"
+                ],
+                "labels": [
+                    "Télétravail ponctuel possible"
+                ]
+            },
+            {
+                "id": 12958,
+                "internal": "Expérience",
+                "apiKey": "experience",
+                "label": "Expérience",
+                "values": [
+                    "__2_ans"
+                ],
+                "labels": [
+                    "> 2 ans"
+                ]
+            }
+        ],
+        "public": true
+    },
+    {
+        "id": 310798,
+        "token": "2euqfr7",
+        "dateCreation": 1713369902,
+        "dateFirstPublish": 1713391805,
+        "dateLastPublish": 1714132180,
+        "label": "Lead Android Developer",
+        "currentStatus": "PUBLISHED",
+        "contract": "CDI",
+        "contractLength": null,
+        "contractLengthTimeUnit": null,
+        "fullTime": true,
+        "workHours": null,
+        "remote": false,
+        "country": "FR",
+        "city": "Labège",
+        "postalCode": "31670",
+        "lat": "43.536733",
+        "lng": "1.528055",
+        "recruiterId": 31742,
+        "unitId": 633,
+        "logo": "https://files.taleez.com/files/6396/pics/2022/2/21/c8231123-c26d-42be-b8cf-30ed93b05b74-0111bdee-4bf7-4f51-aaef-65677edeaaca.png",
+        "banner": null,
+        "companyLabel": "Pictarine",
+        "website": "https://pictarine.com/fr",
+        "tags": [
+            "Inspirer les autres développeurs",
+            "Améliorer nos apps",
+            "Explorer les nouvelles technos"
+        ],
+        "url": "https://taleez.com/apply/lead-android-developer-labege-pictarine-cdi",
+        "urlApplying": "https://taleez.com/apply/lead-android-developer-labege-pictarine-cdi/applying",
+        "visibility": "PUBLIC",
+        "properties": [
+            {
+                "id": 24439,
+                "internal": "Team",
+                "apiKey": "equipe",
+                "label": "Team ",
+                "values": [
+                    "engineering"
+                ],
+                "labels": [
+                    "Engineering"
+                ]
+            }
+        ],
+        "public": true
+    },
+    {
+        "id": 308050,
+        "token": "3u1nu1t",
+        "dateCreation": 1712847784,
+        "dateFirstPublish": 1712848618,
+        "dateLastPublish": 1714132173,
+        "label": "Traffic Manager (SEA/SMA)",
+        "currentStatus": "PUBLISHED",
+        "contract": "CDI",
+        "contractLength": null,
+        "contractLengthTimeUnit": null,
+        "fullTime": true,
+        "workHours": null,
+        "remote": false,
+        "country": "FR",
+        "city": "Labège",
+        "postalCode": "31670",
+        "lat": "43.536733",
+        "lng": "1.528055",
+        "recruiterId": 16703,
+        "unitId": 633,
+        "logo": "https://files.taleez.com/files/6396/pics/2022/2/21/c8231123-c26d-42be-b8cf-30ed93b05b74-0111bdee-4bf7-4f51-aaef-65677edeaaca.png",
+        "banner": null,
+        "companyLabel": "Pictarine",
+        "website": "https://pictarine.com/fr",
+        "tags": [
+            "Expérimenter/tester les hypothèses Growth",
+            "Mettre en place des campagnes",
+            "Co-construire des solutions"
+        ],
+        "url": "https://taleez.com/apply/traffic-manager-sea-sma-labege-pictarine-cdi",
+        "urlApplying": "https://taleez.com/apply/traffic-manager-sea-sma-labege-pictarine-cdi/applying",
+        "visibility": "PUBLIC",
+        "properties": [
+            {
+                "id": 24439,
+                "internal": "Team",
+                "apiKey": "equipe",
+                "label": "Team ",
+                "values": [
+                    "marketing"
+                ],
+                "labels": [
+                    "Marketing "
+                ]
+            }
+        ],
+        "public": true
+    },
+    {
+        "id": 306719,
+        "token": "1m53fi8",
+        "dateCreation": 1712586440,
+        "dateFirstPublish": 1712589010,
+        "dateLastPublish": 1714132108,
+        "label": "Front Web Developer Senior (Next.js - React.js - TypeScript)",
+        "currentStatus": "PUBLISHED",
+        "contract": "CDI",
+        "contractLength": null,
+        "contractLengthTimeUnit": null,
+        "fullTime": true,
+        "workHours": null,
+        "remote": false,
+        "country": "FR",
+        "city": "Labège",
+        "postalCode": "31670",
+        "lat": "43.536733",
+        "lng": "1.528055",
+        "recruiterId": 20131,
+        "unitId": 633,
+        "logo": "https://files.taleez.com/files/6396/pics/2022/2/21/c8231123-c26d-42be-b8cf-30ed93b05b74-0111bdee-4bf7-4f51-aaef-65677edeaaca.png",
+        "banner": null,
+        "companyLabel": "Pictarine",
+        "website": "https://pictarine.com/fr",
+        "tags": null,
+        "url": "https://taleez.com/apply/front-web-developer-senior-next-js-react-js-typescript-labege-pictarine-cdi",
+        "urlApplying": "https://taleez.com/apply/front-web-developer-senior-next-js-react-js-typescript-labege-pictarine-cdi/applying",
+        "visibility": "PUBLIC",
+        "properties": [
+            {
+                "id": 24439,
+                "internal": "Team",
+                "apiKey": "equipe",
+                "label": "Team ",
+                "values": [
+                    "engineering"
+                ],
+                "labels": [
+                    "Engineering"
+                ]
+            }
+        ],
+        "public": true
+    },
+    {
+        "id": 306048,
+        "token": "dhhdhp",
+        "dateCreation": 1712319886,
+        "dateFirstPublish": 1712320652,
+        "dateLastPublish": 1714132167,
+        "label": "Data Scientist",
+        "currentStatus": "PUBLISHED",
+        "contract": "CDI",
+        "contractLength": null,
+        "contractLengthTimeUnit": null,
+        "fullTime": true,
+        "workHours": null,
+        "remote": false,
+        "country": "FR",
+        "city": "Labège",
+        "postalCode": "31670",
+        "lat": "43.536733",
+        "lng": "1.528055",
+        "recruiterId": 20743,
+        "unitId": 633,
+        "logo": "https://files.taleez.com/files/6396/pics/2022/2/21/c8231123-c26d-42be-b8cf-30ed93b05b74-0111bdee-4bf7-4f51-aaef-65677edeaaca.png",
+        "banner": null,
+        "companyLabel": "Pictarine",
+        "website": "https://pictarine.com/fr",
+        "tags": [
+            "Créer des modèles prédictifs",
+            "Aider à la prise de décision",
+            "Explorer les nouvelles technos"
+        ],
+        "url": "https://taleez.com/apply/data-scientist-labege-pictarine-cdi",
+        "urlApplying": "https://taleez.com/apply/data-scientist-labege-pictarine-cdi/applying",
+        "visibility": "PUBLIC",
+        "properties": [
+            {
+                "id": 24439,
+                "internal": "Team",
+                "apiKey": "equipe",
+                "label": "Team ",
+                "values": [
+                    "engineering"
+                ],
+                "labels": [
+                    "Engineering"
+                ]
+            }
+        ],
+        "public": true
+    },
+    {
+        "id": 305488,
+        "token": "2j6nh1i",
+        "dateCreation": 1712238782,
+        "dateFirstPublish": 1712240837,
+        "dateLastPublish": 1714132157,
+        "label": "Talent Acquisition Partner H/F",
+        "currentStatus": "PUBLISHED",
+        "contract": "CDI",
+        "contractLength": null,
+        "contractLengthTimeUnit": null,
+        "fullTime": true,
+        "workHours": null,
+        "remote": false,
+        "country": "FR",
+        "city": "Labège",
+        "postalCode": "31670",
+        "lat": "43.536733",
+        "lng": "1.528055",
+        "recruiterId": 31742,
+        "unitId": 633,
+        "logo": "https://files.taleez.com/files/6396/pics/2022/2/21/c8231123-c26d-42be-b8cf-30ed93b05b74-0111bdee-4bf7-4f51-aaef-65677edeaaca.png",
+        "banner": null,
+        "companyLabel": "Pictarine",
+        "website": "https://pictarine.com/fr",
+        "tags": [
+            "Sourcing",
+            "Recrutement de profils IT",
+            "Marque employeur"
+        ],
+        "url": "https://taleez.com/apply/talent-acquisition-partner-h-f-labege-pictarine-cdi",
+        "urlApplying": "https://taleez.com/apply/talent-acquisition-partner-h-f-labege-pictarine-cdi/applying",
+        "visibility": "PUBLIC",
+        "properties": [
+            {
+                "id": 24439,
+                "internal": "Team",
+                "apiKey": "equipe",
+                "label": "Team ",
+                "values": [
+                    "people"
+                ],
+                "labels": [
+                    "People "
+                ]
+            },
+            {
+                "id": 12958,
+                "internal": "Expérience",
+                "apiKey": "experience",
+                "label": "Expérience",
+                "values": [
+                    "__2_ans"
+                ],
+                "labels": [
+                    "> 2 ans"
+                ]
+            }
+        ],
+        "public": true
+    },
+    {
+        "id": 263189,
+        "token": "17rf8pn",
+        "dateCreation": 1704987233,
+        "dateFirstPublish": 1704988192,
+        "dateLastPublish": 1714132151,
+        "label": "Senior Product Designer",
+        "currentStatus": "PUBLISHED",
+        "contract": "CDI",
+        "contractLength": null,
+        "contractLengthTimeUnit": null,
+        "fullTime": true,
+        "workHours": null,
+        "remote": false,
+        "country": "FR",
+        "city": "Toulouse",
+        "postalCode": "31000",
+        "lat": "43.604652",
+        "lng": "1.444209",
+        "recruiterId": 16391,
+        "unitId": 633,
+        "logo": "https://files.taleez.com/files/6396/pics/2022/2/21/c8231123-c26d-42be-b8cf-30ed93b05b74-0111bdee-4bf7-4f51-aaef-65677edeaaca.png",
+        "banner": null,
+        "companyLabel": "Pictarine",
+        "website": "https://pictarine.com/fr",
+        "tags": [
+            "Discovery",
+            "Contribuer au design des produits B2C",
+            "Data & business mindset"
+        ],
+        "url": "https://taleez.com/apply/senior-product-designer-toulouse-pictarine-cdi",
+        "urlApplying": "https://taleez.com/apply/senior-product-designer-toulouse-pictarine-cdi/applying",
+        "visibility": "PUBLIC",
+        "properties": [
+            {
+                "id": 24439,
+                "internal": "Team",
+                "apiKey": "equipe",
+                "label": "Team ",
+                "values": [
+                    "produit"
+                ],
+                "labels": [
+                    "Product"
+                ]
+            }
+        ],
+        "public": true
+    },
+    {
+        "id": 241766,
+        "token": "3tcqtbg",
+        "dateCreation": 1700045973,
+        "dateFirstPublish": 1700046673,
+        "dateLastPublish": 1714132144,
+        "label": "Senior Android Developer",
+        "currentStatus": "PUBLISHED",
+        "contract": "CDI",
+        "contractLength": null,
+        "contractLengthTimeUnit": null,
+        "fullTime": true,
+        "workHours": null,
+        "remote": false,
+        "country": "FR",
+        "city": "Toulouse",
+        "postalCode": "31000",
+        "lat": "43.604652",
+        "lng": "1.444209",
+        "recruiterId": 16391,
+        "unitId": 633,
+        "logo": "https://files.taleez.com/files/6396/pics/2022/2/21/c8231123-c26d-42be-b8cf-30ed93b05b74-0111bdee-4bf7-4f51-aaef-65677edeaaca.png",
+        "banner": null,
+        "companyLabel": "Pictarine",
+        "website": "https://pictarine.com/fr",
+        "tags": [
+            "Développer vite et bien",
+            "Améliorer nos apps",
+            "Inspirer les autres développeurs"
+        ],
+        "url": "https://taleez.com/apply/senior-android-developer-toulouse-pictarine-cdi",
+        "urlApplying": "https://taleez.com/apply/senior-android-developer-toulouse-pictarine-cdi/applying",
+        "visibility": "PUBLIC",
+        "properties": [
+            {
+                "id": 24439,
+                "internal": "Team",
+                "apiKey": "equipe",
+                "label": "Team ",
+                "values": [
+                    "engineering"
+                ],
+                "labels": [
+                    "Engineering"
+                ]
+            }
+        ],
+        "public": true
+    },
+    {
+        "id": 226691,
+        "token": "j4148c",
+        "dateCreation": 1695893221,
+        "dateFirstPublish": 1695893600,
+        "dateLastPublish": 1714143664,
+        "label": "Senior Data Engineer",
+        "currentStatus": "PUBLISHED",
+        "contract": "CDI",
+        "contractLength": null,
+        "contractLengthTimeUnit": null,
+        "fullTime": true,
+        "workHours": null,
+        "remote": false,
+        "country": "FR",
+        "city": "Toulouse",
+        "postalCode": "31000",
+        "lat": "43.604652",
+        "lng": "1.444209",
+        "recruiterId": 26342,
+        "unitId": 633,
+        "logo": "https://files.taleez.com/files/6396/pics/2022/2/21/c8231123-c26d-42be-b8cf-30ed93b05b74-0111bdee-4bf7-4f51-aaef-65677edeaaca.png",
+        "banner": null,
+        "companyLabel": "Pictarine",
+        "website": "https://pictarine.com/fr",
+        "tags": [
+            "Faciliter l'accès à la data",
+            "Co-construire des solutions",
+            "Orchestrer le flux de données"
+        ],
+        "url": "https://taleez.com/apply/data-engineer-toulouse-pictarine-cdi",
+        "urlApplying": "https://taleez.com/apply/data-engineer-toulouse-pictarine-cdi/applying",
+        "visibility": "PUBLIC",
+        "properties": [
+            {
+                "id": 24439,
+                "internal": "Team",
+                "apiKey": "equipe",
+                "label": "Team ",
+                "values": [
+                    "engineering"
+                ],
+                "labels": [
+                    "Engineering"
+                ]
+            }
+        ],
+        "public": true
+    },
+    {
+        "id": 140579,
+        "token": "ekp642",
+        "dateCreation": 1663579124,
+        "dateFirstPublish": 1663579137,
+        "dateLastPublish": 1714132130,
+        "label": "Senior Backend Developer (Kotlin - Spring Boot - GCP)",
+        "currentStatus": "PUBLISHED",
+        "contract": "CDI",
+        "contractLength": null,
+        "contractLengthTimeUnit": null,
+        "fullTime": true,
+        "workHours": null,
+        "remote": false,
+        "country": "FR",
+        "city": "Labège",
+        "postalCode": "31670",
+        "lat": "43.536733",
+        "lng": "1.528055",
+        "recruiterId": 18951,
+        "unitId": 633,
+        "logo": "https://files.taleez.com/files/6396/pics/2022/2/21/c8231123-c26d-42be-b8cf-30ed93b05b74-0111bdee-4bf7-4f51-aaef-65677edeaaca.png",
+        "banner": null,
+        "companyLabel": "Pictarine",
+        "website": "https://pictarine.com/fr",
+        "tags": [
+            "Concevoir des datas models",
+            "Tester des nouvelles technos",
+            "Résoudre des problématiques"
+        ],
+        "url": "https://taleez.com/apply/backend-developer-labege-pictarine-cdi-2",
+        "urlApplying": "https://taleez.com/apply/backend-developer-labege-pictarine-cdi-2/applying",
+        "visibility": "PUBLIC",
+        "properties": [
+            {
+                "id": 24439,
+                "internal": "Team",
+                "apiKey": "equipe",
+                "label": "Team ",
+                "values": [
+                    "engineering"
+                ],
+                "labels": [
+                    "Engineering"
+                ]
+            }
+        ],
+        "public": true
+    },
+    {
+        "id": 140551,
+        "token": "1tddg2b",
+        "dateCreation": 1663573396,
+        "dateFirstPublish": 1663573420,
+        "dateLastPublish": 1714132123,
+        "label": "Senior iOS Developer",
+        "currentStatus": "PUBLISHED",
+        "contract": "CDI",
+        "contractLength": null,
+        "contractLengthTimeUnit": null,
+        "fullTime": true,
+        "workHours": null,
+        "remote": false,
+        "country": "FR",
+        "city": "Labège",
+        "postalCode": "31670",
+        "lat": "43.536733",
+        "lng": "1.528055",
+        "recruiterId": 18951,
+        "unitId": 633,
+        "logo": "https://files.taleez.com/files/6396/pics/2022/2/21/c8231123-c26d-42be-b8cf-30ed93b05b74-0111bdee-4bf7-4f51-aaef-65677edeaaca.png",
+        "banner": null,
+        "companyLabel": "Pictarine",
+        "website": "https://pictarine.com/fr",
+        "tags": [
+            "Développer vite et bien",
+            "Inspirer les autres développeurs",
+            "Superviser les apps de production"
+        ],
+        "url": "https://taleez.com/apply/senior-ios-developer-labege-pictarine-cdi-1",
+        "urlApplying": "https://taleez.com/apply/senior-ios-developer-labege-pictarine-cdi-1/applying",
+        "visibility": "PUBLIC",
+        "properties": [
+            {
+                "id": 12956,
+                "internal": "Niveau de qualification",
+                "apiKey": "niveau_de_qualification",
+                "label": null,
+                "values": [
+                    "cadre"
+                ],
+                "labels": [
+                    "Cadre"
+                ]
+            },
+            {
+                "id": 12955,
+                "internal": "Profil",
+                "apiKey": "profil",
+                "label": "Profil",
+                "values": [
+                    "ingenierie"
+                ],
+                "labels": [
+                    "Ingénierie"
+                ]
+            },
+            {
+                "id": 12958,
+                "internal": "Expérience",
+                "apiKey": "experience",
+                "label": "Expérience",
+                "values": [
+                    "__4_ans"
+                ],
+                "labels": [
+                    "> 4 ans"
+                ]
+            },
+            {
+                "id": 24439,
+                "internal": "Team",
+                "apiKey": "equipe",
+                "label": "Team ",
+                "values": [
+                    "engineering"
+                ],
+                "labels": [
+                    "Engineering"
+                ]
+            }
+        ],
+        "public": true
+    }
+]
