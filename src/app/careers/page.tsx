@@ -11,7 +11,18 @@ import { Carousel, IconButton } from "@material-tailwind/react";
 import Footer from "@/components/Footer/Footer";
 
 export default function Careers() {
-    const offers = useState(jobs)
+    const [offers, setOffers] = useState(jobs)
+    const handleParameter = (e: any) => {
+        if (e == "none") {
+            setOffers(jobs)
+        }
+        else {
+            setOffers(jobs.filter((jobs) => jobs.properties[0].values == e))
+
+            console.log(jobs.filter((jobs) => jobs.properties[0].values == e))
+        }
+    }
+
     const mots = (tags: any) => {
         if (tags != null && tags.length > 0) {
             return(
@@ -27,6 +38,8 @@ export default function Careers() {
             return;
         }
     }
+
+    
     return(
         <>
             <Navbar theme="white"/>
@@ -43,11 +56,18 @@ export default function Careers() {
                         <Image src="https://a.storyblok.com/f/189744/2488x2028/4583732b06/groupe-jeep.jpg" alt="groupe-jeep" width={2000} height={2000}/>
                     </div>
                 </section>
-                <section className="px-5 lg:px-0 lg:max-w-[75rem] flex flex-col pt-20 lg:pt-52">
+                <section className="px-5 lg:px-0 lg:max-w-[75rem] flex flex-col pt-20 lg:pt-52 w-full">
                     <h2 className="font-bold text-[2.5rem]">Nos postes ouverts</h2>
-                    <div>
-                        <div className="flex flex-col lg:grid lg:grid-cols-3 gap-5">
-                            {offers[0].map(offer => (
+                    <div className="flex flex-row gap-3 w-full pt-5 pb-6 ">
+                        <button className="bg-[#e6eef0] w-12 lg:w-28 h-8 text-xs sm:text-sm rounded-[5px]" value="none" onClick={(e) => handleParameter(e.currentTarget.value)}>All</button>
+                        <button className="bg-[#e6eef0] lg:w-28 h-8 text-xs sm:text-sm rounded-[5px]" value="engineering" onClick={(e) => handleParameter(e.currentTarget.value)}>Engineering</button>
+                        <button className="bg-[#e6eef0] lg:w-28 h-8 text-xs sm:text-sm rounded-[5px]" value="marketing" onClick={(e) => handleParameter(e.currentTarget.value)}>Marketing</button>
+                        <button className="bg-[#e6eef0] lg:w-28 h-8 text-xs sm:text-sm rounded-[5px]" value="people" onClick={(e) => handleParameter(e.currentTarget.value)}>People</button>
+                        <button className="bg-[#e6eef0] lg:w-28 h-8 text-xs sm:text-sm rounded-[5px]" value="produit" onClick={(e) => handleParameter(e.currentTarget.value)}>Produit</button>
+                    </div>
+                    <div className="w-full">
+                        <div className="flex flex-col lg:grid lg:grid-cols-3 gap-5 w-full">
+                            {offers.map(offer => (
                                 <Link href={offer.url}>
                                     <div className="p-8 bg-[#f8f8f8] h-80 scale-95 hover:scale-100 hover:transition-all ">
                                         <p className="font-bold text-xl">{offer.label}</p>

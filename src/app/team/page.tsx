@@ -11,7 +11,32 @@ import Navbar from "@/components/Navbar/Navbar"
 import Footer from "@/components/Footer/Footer"
 
 export default function Team() {
-    const members = useState(team)
+    const [members, setMembers] = useState(team)
+    const handleParameter = (e:any) => {
+        if(e == "none"){
+            setMembers(team)
+        }
+        else{
+            setMembers(team.filter((team) => team.team == e))
+
+            console.log(team.filter((team) => team.team == e))
+        }
+    }
+    
+    if (members.length > 50){
+        var count = 
+            <>
+                <div className="relative flex flex-col justify-end w-full ">
+                    <p className="text-8xl font-bold">61</p>
+                    <p className="text-4xl font-bold mb-2">people</p>
+                    <p>Mais on grandit très vite</p>
+                </div>
+            </>
+    }else{
+        var count = <></>
+    }
+    
+    
     return(
         <>
             <Navbar theme="white"/>
@@ -24,13 +49,18 @@ export default function Team() {
                     </h2>
                 </section>
                 <section className="px-5 lg:px-0 pt-24 lg:max-w-[75rem]">
-                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
-                        <div className="relative flex flex-col justify-end w-full ">
-                            <p className="text-8xl font-bold">61</p>
-                            <p className="text-4xl font-bold mb-2">people</p>
-                            <p>Mais on grandit très vite</p>
-                        </div>
-                        {members[0].map(member => (
+                    <div className="grid grid-cols-4 lg:flex lg:flex-row gap-3 w-full ">
+                        <button className="bg-[#e6eef0] lg:w-28 h-8 text-xs sm:text-sm rounded-[5px]" value="none" onClick={(e) => handleParameter(e.currentTarget.value)}>Toute l'équipe</button>
+                        <button className="bg-[#e6eef0] lg:w-28 h-8 text-xs sm:text-sm rounded-[5px]" value="product" onClick={(e) => handleParameter(e.currentTarget.value)}>Product</button>
+                        <button className="bg-[#e6eef0] lg:w-28 h-8 text-xs sm:text-sm rounded-[5px]" value="people" onClick={(e) => handleParameter(e.currentTarget.value)}>People</button>
+                        <button className="bg-[#e6eef0] lg:w-28 h-8 text-xs sm:text-sm rounded-[5px]" value="marketing" onClick={(e) => handleParameter(e.currentTarget.value)}>Marketing</button>
+                        <button className="bg-[#e6eef0] lg:w-28 h-8 text-xs sm:text-sm rounded-[5px]" value="finance" onClick={(e) => handleParameter(e.currentTarget.value)}>Finance</button>
+                        <button className="bg-[#e6eef0] lg:w-28 h-8 text-xs sm:text-sm rounded-[5px]" value="engineering" onClick={(e) => handleParameter(e.currentTarget.value)}>Engineering</button>
+                        <button className="bg-[#e6eef0] lg:w-28 h-8 text-xs sm:text-sm rounded-[5px]" value="partnerships" onClick={(e) => handleParameter(e.currentTarget.value)}>Partnerships</button>
+                    </div>
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 pt-16">
+                        {count}
+                        {members.map(member => (
                             <div className="cardMember">
                                 <Image className="cardImage" src={member.image.filename} alt={member.name} width={300} height={300} />
                                 <div className="cardText">
