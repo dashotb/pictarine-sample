@@ -4,6 +4,7 @@ import { team_pictarine, workshop_reunion, team_summerparty, workshop_pictarine2
 import {Hello, Bell} from "@/assets/tools/svg"
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import { Title } from "@/components/Title/Title";
 
 export default function Home() {
   return (
@@ -13,10 +14,7 @@ export default function Home() {
         <section className="pt-12 lg:pt-[6.5rem] px-5 lg:px-0 flex flex-col lg:grid lg:grid-cols-12 lg:gap-7 lg:max-w-[75rem] w-full">
           
             <div className="lg:col-start-1 lg:col-end-5 flex flex-col content-center justify-center items-center lg:items-start text-left">
-              <h2 className="text-[1.6rem] lg:text-[3.5rem] pr-3 lg:pr-0 lg:pl-6 flex flex-col pb-12 lg:pb-20 ">
-                Explorateurs
-                <span className="absolute pt-5 lg:pt-12 pl-6 text-red-600 text-[2.2rem] lg:text-[4.2rem] italic font-extrabold ">créatifs</span>
-              </h2>
+              <Title title="Explorateurs" sub="créatifs" />
               <p className="lg:max-w-[22rem]">Une team exceptionnelle, une pincée d'international, on rajoute une bonne louche de débrouillardise... et on obtient une équipe prête à déplacer des montagnes ! Bienvenue chez Pictarine !</p>
             </div>
           

@@ -204,7 +204,7 @@ export default function Tech() {
                     <div className="flex justify-center mt-8">
 
                         <Carousel
-                            className="rounded-xl w-full h-[50%] lg:w-[800px] items-center"
+                            className="flex justify-center rounded-xl w-full h-[50%] lg:w-[800px] items-center"
                             prevArrow={({ handlePrev }) => (
                                 <IconButton
                                     variant="text"
@@ -282,7 +282,7 @@ export default function Tech() {
                     <h2 className="text-3xl font-bold pb-10">We are problem solvers!</h2>
                     <div className="grid grid-cols-2 lg:grid lg:grid-cols-4 gap-2 lg:gap-5">
                         
-                        <div className="pt-12 col-start-1 col-end-3">
+                        <div className="pt-12 col-start-1 col-end-2">
                             <h2 className="text-xl font-bold">Notre lab</h2>
                             <p className="text-base leading-5 pt-4">Chez Pictarine on adore le challenge de créer nos propres outils qui répondent exactement à nos besoins. L’avantage de créer plutôt qu’utiliser une solution existante ? Le challenge et la praticité ! Overview de nos outils handmade et parfaitement tailored pour nos besoins.</p>
                         </div>
@@ -341,7 +341,7 @@ export default function Tech() {
                             </div>
                             <p className="text-xs lg:text-base leading-5 pt-5">Automatic Release Note Generator for GitHub projects. Cet outil a été extrait pour être publié comme un projet Open Source sur Github.</p>
                         </div>
-                        <div className="bg-[#2b2b2b] p-5 lg:h-[19rem] rounded-[5px]">
+                        <div className="bg-[#2b2b2b] p-5 lg:h-[19rem] rounded-[5px] lg:col-start-1 lg:col-end-2">
                             <div className="flex flex-row">
                                 <div className="w-11 lg:w-full">
                                     <Image src="https://a.storyblok.com/f/189744/320x324/44b2092250/div-1.png" alt="key" width={80} height={80} />

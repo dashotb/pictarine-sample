@@ -28,6 +28,9 @@ const config: Config = withMT({
     screen: {
       'sm': { 'min': '100px', 'max': '1023px' },
       'mlg': { 'min': '1200px', 'max': '8000px' }
+    },
+    colors: {
+      'rosso': '#db3753'
     }
   },
 });
